@@ -9,42 +9,20 @@ type: page
 * content
 {:toc}
 
-## 工具
+## 职业路线
 
-* [box-shadow generator](http://www.cssmatic.com/box-shadow)
+- [高级Java工程师必须掌握的技能](http://www.sohu.com/a/157721767_99926657)
+- [阿里 P7 架构师年薪 50W，只因做到了这几点](http://www.3xmq.com/article/1534323860258)
 
-    生成 box-shadow 的工具。
+## 业内大牛
 
-* [gradient-generator](http://www.cssmatic.com/gradient-generator)
+- 淘宝沈询
+   - [沈询所有资源的索引](http://blog.sina.com.cn/s/blog_693f08470102vibt.html)
 
-    渐变生成器。
+## Spring
 
-* [Ultimate CSS Gradient Generator](http://www.colorzilla.com/gradient-editor/)
+### Spring 学习资料
 
-    也是渐变生成器
+- [开涛博客](http://jinnianshilongnian.iteye.com/)
+ 
 
-* [CSS Generators -CSSREFLEX](http://www.cssreflex.com/css-generators/)
-
-    CSS3 生成器
-
-- [tiny png](https://tinypng.com/)
-
-    用于压缩 png 或 jpg 的在线工具
-
-* [图床 https://sm.ms/](https://sm.ms/)
-
-    有 API 可用。
-
-* [新浪微博图床 Chrome扩展](https://github.com/Suxiaogang/WeiboPicBed)
-
-* [Unix 时间戳 Unix timestamp](http://tool.chinaz.com/Tools/unixtime.aspx)
-
-- [在线正则表达式匹配](https://regex101.com/)
-    - 这个功能更强大一点，能清楚的区分出贪婪和懒惰正则。
-- [http://regexr.com/](http://regexr.com/)
-- [google fonts](https://fonts.google.com/)
-  - [Google Fonts 加速代理](https://fengmk2.com/blog/2016/google-fonts-mirror)
-
-## Comments
-
-{% include comments.html %}
