@@ -14,12 +14,12 @@
      */
   var demoContent = [
     {
-      demo_link: 'https://codepen.io/haoyang/pen/jrvrQq',
-      img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
-      code_link: 'https://codepen.io/haoyang/pen/jrvrQq',
-      title: 'Fisher-Yates 洗牌算法动画',
-      core_tech: 'JavaScript',
-      description: 'Fisher-Yates 洗牌算法动画。算法详情见 <a href ="https://gaohaoyang.github.io/2016/10/16/shuffle-algorithm/">这里</a>。'
+      demo_link: 'https://github.com/ljmatlight/spring-quartz-batch-mds',
+      img_link: 'https://i.loli.net/2018/09/04/5b8e1cc992bdb.png',
+      code_link: 'https://github.com/ljmatlight/spring-quartz-batch-mds',
+      title: 'spring-quartz-batch-mds',
+      core_tech: 'spring batch, quartz',
+      description: 'Quartz and Spring Batch base Multi DataSource!'
     }
 	// todo 在此处添加其他项目
   ];

@@ -28,7 +28,9 @@ type: page
 
 ## 友情链接
 
-~欢迎访问~
+- [凌风讲武堂](https://ljmatlight.github.io)
+- [Linc Zhang](https://www.bahutou.cn/)
+
 
 ## Comments
 
