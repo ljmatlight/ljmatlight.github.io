@@ -18,6 +18,14 @@ type: page
 
 - 淘宝沈询
    - [沈询所有资源的索引](http://blog.sina.com.cn/s/blog_693f08470102vibt.html)
+- 58沈剑
+   - [58沈剑专栏](http://zhuanlan.51cto.com/columnlist/shenj/)
+- 陈浩
+   - [左耳朵耗子](https://coolshell.cn/)
+   
+- 张开涛
+   - [亿级流量网站架构核心技术](http://jinnianshilongnian.iteye.com/)   
+
 
 ## Spring
 
