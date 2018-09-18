@@ -16,6 +16,7 @@ type: page
 ## 联系我
 
 * GitHub：[ljmatlight](https://github.com/ljmatlight)
+* segmentfault：[凌风讲武](https://segmentfault.com/u/jiangwutang)
 * email：vimx86@gmail.com
 
 ## 关于本站
