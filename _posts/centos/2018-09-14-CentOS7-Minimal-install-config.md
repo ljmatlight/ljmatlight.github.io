@@ -273,6 +273,34 @@ rpm -ivh mysql57-community-release-el7-8.noarch.rpm
 yum -y install mysql-server
 ```
 
+Mysql5.7默认安装之后root是有密码的。
+
+获取MySQL的临时密码
+  为了加强安全性，MySQL5.7为root用户随机生成了一个密码，在error log中，关于error log的位置，如果安装的是RPM包，则默认是/var/log/mysqld.log。 
+  只有启动过一次mysql才可以查看临时密码
+
+```bash
+#查看原始密码
+grep 'temporary password' /var/log/mysqld.log
+
+#将3306端口添加到防火墙例外并重启
+firewall-cmd --zone=public --add-port=3306/tcp --permanent
+firewall-cmd --reload
+```
+
+```mysql
+
+#修改密码
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'eFeG20125';
+
+#授权远程网络访问
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.199.%' IDENTIFIED BY 'eFeG20125' WITH GRANT OPTION;
+flush privileges;
+
+```
+
+ 
+
 ### 安装 Redis
 ```bash
 #1. 设置 Redis 的仓库地址
@@ -282,7 +310,7 @@ yum -y install redis
 #3. 配置 redis.conf
     #bind 127.0.0.1 
     requirepass redisPassword 
-#4. 开发 redis 端口
+#4. 开放 redis 端口
 # 将6379端口添加到防火墙例外并重启
 firewall-cmd --zone=public --add-port=6379/tcp --permanent
 firewall-cmd --reload
