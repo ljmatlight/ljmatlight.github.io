@@ -202,7 +202,7 @@ ps -ef | grep "tomcat-x-cas-server" | grep -v grep | awk '{print $2}' | xargs ki
 
 ### 安装 java
 
-卸载 自带的 openjdk 
+1.卸载 自带的 openjdk 
 
 ```bash
 rpm -qa|grep java
@@ -210,6 +210,31 @@ rpm -qa|grep java
 
 rpm -e -nodeps java-xxx
 
+2.从 Oracle 官网下载 jdk-8u181-linux-x64.tar.gz
+
+3.解压
+
+```bash
+tar –xzvf jdk-8u45-linux-x64.gz
+```
+
+4.jdk的配置
+
+```bash
+vi /etc/profile
+```
+
+```bash
+export JAVA_HOME=jdk的绝对路径
+export PATH=$PATH:$JAVA_HOME/bin
+```
+
+5.测试安装是否成功
+使用`reboot`命令重启系统使环境变量生效。
+
+```bash
+java -version
+```
 
 ### 安装 Maven
 
