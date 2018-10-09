@@ -320,13 +320,15 @@ firewall-cmd --reload
 ### 安装 Nginx
 
 ```bash
-# 重载配置，重启服务
 
-# 重新加载 nginx 配置
-cd /usr/sbin
-./nginx -s reload 
+yum -y install nginx
 
 # 重启 nginx 服务
 service nginx restart
+
+# 将 80 端口添加到防火墙例外并重启
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+firewall-cmd --reload
+
 ```
  
