@@ -227,13 +227,21 @@ vi /etc/profile
 ```bash
 export JAVA_HOME=jdk的绝对路径
 export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
 
-5.测试安装是否成功
+使用 `source /etc/profile` 重新加载配置，使配置生效。
+
+或
+
 使用`reboot`命令重启系统使环境变量生效。
+
+5.测试安装是否成功
 
 ```bash
 java -version
+
+javac
 ```
 
 ### 安装 Maven
@@ -298,8 +306,6 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.199.%' IDENTIFIED BY 'eFeG20125' 
 flush privileges;
 
 ```
-
- 
 
 ### 安装 Redis
 ```bash
