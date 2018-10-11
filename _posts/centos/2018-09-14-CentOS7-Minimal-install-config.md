@@ -329,6 +329,8 @@ firewall-cmd --reload
 
 yum -y install nginx
 
+/usr/sbin/nginx -s reload
+
 # 重启 nginx 服务
 service nginx restart
 
@@ -337,4 +339,3 @@ firewall-cmd --zone=public --add-port=80/tcp --permanent
 firewall-cmd --reload
 
 ```
- 
